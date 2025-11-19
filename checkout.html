@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChachaCheckOut</title>
+    <link rel="stylesheet" href="checkout-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="ChachaFoodMart" id="logo-img">
+                        <div class="brand-name">                            
+                            <img src="images/brand-name.png" alt="CHA CHA" id="brand-name-img">                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Checkout Section-->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <p>Please fill in your delivery details below.</p>
+            </div>            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <h3>Delivery Details</h3>
+                    <form id="delivery-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <span class="error-message" id="fullName-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" name="address" required>
+                            <span class="error-message" id="address-error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                                <span class="error-message" id="city-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="NSW">New South Wales</option>
+                                    <option value="VIC">Victoria</option>
+                                    <option value="QLD">Queensland</option>
+                                    <option value="SA">South Australia</option>
+                                    <option value="WA">Western Australia</option>
+                                    <option value="TAS">Tasmania</option>
+                                    <option value="ACT">Australian Capital Territory</option>
+                                    <option value="NT">Northern Territory</option>
+                                </select>
+                                <span class="error-message" id="state-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" id="postcode" name="postcode" required>
+                            <span class="error-message" id="postcode-error"></span>
+                        </div>                                   
+                        <button type="submit" id="place-order-btn" class="place-order-btn" >Place Order</button>
+                    </form>
+                    <p id="form-error-msg" class="error-msg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FoodMart">
+                    <p>Quality groceries delivered to your doorstep</p>
+                </div>                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Sydney, Australia</p>        
+                    <p><i class="fas fa-envelope"></i> info@chachafood.au</p>
+                </div>                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChachaFoodMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="checkout-script.js">    </script>
+</body>
+</html>
+
+

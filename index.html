@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChachaFoodMart</title>
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="ChachaFoodMart" id="logo-img">
+                        <div class="brand-name">                            
+                            <img src="images/brand-name.png" alt="CHA CHA" id="brand-name-img">                            
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation -->                
+                <nav class="search-container">
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products" id="search-input">
+                        <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </nav>
+
+                <!-- User Actions -->
+                <div class="user-actions">                
+                    <div class="cart-icon" id="cart-trigger">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>                        
+                        <span class="cart-text" id="go-to-cart">Go to cart</span>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-feature">
+                    <div class="feature-content">
+                        <span class="feature-tag">100% Natural</span>
+                        <h1>Fresh Smoothie & Summer Juice</h1>
+                        <p>Best Selling Summer Juice With Natural Extracts.</p>                        
+                        <!--click button will link with subcategory smoothies-->                        
+                        <button class="shop-now-btn" id="smoothie-btn">SHOP NOW</button>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/smoothie.png" alt="Smoothie">
+                    </div>
+                </div>                
+                <div class="promo-content">
+                    <div class="promo-item veggie-bg">
+                        <span class="discount-tag">20% Off</span>
+                        <span class="sale-tag">SALE</span>
+                        <h2>Fruits & Vegetables</h2>
+                        <a href="#" class="shop-category">Shop The Category <i class="fas fa-plus"></i></a>                        
+                    </div>
+                    <div class="promo-item bread-bg">
+                        <span class="discount-tag">15% Off</span>
+                        <span class="sale-tag">SALE</span>
+                        <h2>Baked Products</h2>
+                        <a href="#" class="shop-category">Shop The Category <i class="fas fa-plus"></i></a>                        
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Category</h2>
+            </div>
+            <div class="category-grid">
+                <div class="category-item" data-category="fruits & veges">                    
+                    <div class="category-icon">
+                        <i class="fas fa-apple-alt"></i>  
+                    </div>                  
+                    <span>Fruits & Veges</span>
+                    <!--subcategory list-->
+                    <div class="subcategory-list">
+                        <div class="subcategory-item" data-subcategory="Fruits">Fruits</div>
+                        <div class="subcategory-item" data-subcategory="Veges">Veges</div>
+                    </div>                
+                </div>           
+                <div class="category-item" data-category="breads & sweets">
+                    <div class="category-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <span>Breads & Sweets</span>
+                    <!--subcategory list-->
+                    <div class="subcategory-list">
+                        <div class="subcategory-item" data-subcategory="Breads">Breads</div>
+                        <div class="subcategory-item" data-subcategory="Sweets">Sweets</div>
+                    </div> 
+                </div>
+                <div class="category-item" data-category="drinks">
+                    <div class="category-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <span>Drinks</span>
+                    <!--subcategory list-->
+                    <div class="subcategory-list">
+                        <div class="subcategory-item" data-subcategory="Alcohol">Alcohol</div>
+                        <div class="subcategory-item" data-subcategory="Smoothie">Smoothie</div>
+                        <div class="subcategory-item" data-subcategory="Soft Drinks">Soft Drinks</div>
+                        <div class="subcategory-item" data-subcategory="Coffee">Coffee</div>
+                    </div> 
+                </div>
+                <div class="category-item" data-category="dairy">
+                    <div class="category-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <span>Dairy</span>
+                    <div class="subcategory-list">
+                        <div class="subcategory-item" data-subcategory="Frozen">Frozen</div>
+                        <div class="subcategory-item" data-subcategory="Cheese">Cheese</div>
+                    </div> 
+                </div>
+                <div class="category-item" data-category="raw meat">
+                    <div class="category-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span>Raw Meat</span>
+                    <div class="subcategory-list">
+                        <div class="subcategory-item" data-subcategory="Seafood">Seafood</div>
+                        <div class="subcategory-item" data-subcategory="Deli">Deli</div>
+                    </div> 
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Products</h2>
+          </div>
+          <div class="products-grid" id="products-container">
+            <!-- JS will load product cards here -->
+          </div>
+        </div>        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FoodMart">
+                    <p>Quality groceries delivered to your doorstep</p>
+                </div>                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Sydney, Australia</p>        
+                    <p><i class="fas fa-envelope"></i> info@chachafood.au</p>
+                </div>                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChachaFoodMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index-script.js">    </script>
+</body>
+</html>

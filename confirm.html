@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChachaConfirm</title>
+    <link rel="stylesheet" href="confirm-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="ChachaFoodMart" id="logo-img">
+                        <div class="brand-name">                            
+                            <img src="images/brand-name.png" alt="CHA CHA" id="brand-name-img">                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Confirmation Section-->
+    <section class="confirmation-section">
+        <h2>Thank You! Your Order Has Been Placed 🎉</h2>
+
+        <div class="summary-section">
+            <h3>🛒 Order Summary</h3>
+            <div id="order-summary">
+                <!-- JS will populate items here -->
+            </div>
+        </div>
+
+        <div class="delivery-section">
+            <h3>📦 Delivery Details</h3>
+            <div class="delivery-detail">
+                <p><strong>Name:</strong> <span id="delivery-name"></span></p>
+                <p><strong>Address:</strong> <span id="delivery-address"></span></p>
+                <p><strong>Contact:</strong> <span id="delivery-contact"></span></p>
+            </div>
+        </div>
+        <div class="confirmation-email">
+            A confirmation email has been sent to <strong id="delivery-email"></strong>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FoodMart">
+                    <p>Quality groceries delivered to your doorstep</p>
+                </div>                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Sydney, Australia</p>        
+                    <p><i class="fas fa-envelope"></i> info@chachafood.au</p>
+                </div>                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChachaFoodMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="confirm-script.js">    </script>
+</body>
+</html>
+
+

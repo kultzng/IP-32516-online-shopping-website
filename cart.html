@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChachaShoppingCart</title>
+    <link rel="stylesheet" href="cart-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="ChachaFoodMart" id="logo-img">
+                        <div class="brand-name">                            
+                            <img src="images/brand-name.png" alt="CHA CHA" id="brand-name-img">                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Cart Section-->
+    <section class ="cart-section">
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>            
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-container">
+                <span>Total:</span>
+                <span id="cart-sidebar-total">$0.00</span>
+            </div>
+            <div class="cart-btn">
+                <button id="checkout-btn" class="checkout-btn">Checkout</button>                   
+                <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    <!--div class="cart-overlay" id="cart-overlay"></div-->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FoodMart">
+                    <p>Quality groceries delivered to your doorstep</p>
+                </div>                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Sydney, Australia</p>        
+                    <p><i class="fas fa-envelope"></i> info@chachafood.au</p>
+                </div>                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChachaFoodMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="cart-script.js">    </script>
+</body>
+</html>
+
+
