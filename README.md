@@ -11,3 +11,4 @@ The website enable users (i.e., potential customers) to
 • Place an order for the items in the shopping cart, and finally,
 • Receive a confirmation email about an order
 
+![chacha](https://github.com/user-attachments/assets/efa10505-d4d9-4747-9854-1ece7d2545fd)
